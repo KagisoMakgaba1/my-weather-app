@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Data types</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7c8b23021e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-bar" id="cityForm">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button type="button" class="btn">Search</button>
+        <button type="button" class="currentLocationBtn">Current</button>
+      </form>
+      <br />
+
+      <div class="header">
+        <div class="header-left">
+          <div class="current-city">Johannesburg</div>
+          <div class="current-day-time">Saturday 20:00</div>
+        </div>
+
+        <div class="header-right">
+          <div class="info-group">
+            <div class="current-precip">Precipitation: 0%</div>
+            <div class="current-hum">Humidity: 42%</div>
+            <div class="current-wind">Wind: 10 km/h</div>
+          </div>
+        </div>
+
+        <div class="header-far-right">
+          <div class="weather-icon-large">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <span class="temp">11</span>
+            <sup
+              ><a href="#" id="celsius">℃</a> |
+              <a href="#" id="fahrenheit">℉</a></sup
+            >
+            <br />
+            <div class="more-info">Clear with periodic clouds</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="future-forecast">
+        <div class="row">
+          <div class="col">
+            <div class="future-forecast-days">
+              Sat
+              <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="day-temps"><span class="max-temp">19°</span> 4°</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="future-forecast-days">
+              Sun
+              <div class="weather-icon-sun">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="day-temps"><span class="max-temp">13°</span> -2°</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="future-forecast-days">
+              Mon
+              <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="day-temps"><span class="max-temp">9°</span> -1°</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="future-forecast-days">
+              Tue
+              <div class="weather-icon-sun">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="day-temps"><span class="max-temp">13°</span> 1°</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="future-forecast-days">
+              Wed
+              <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="day-temps"><span class="max-temp">15°</span> 3°</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script src="src/index.js"></script>
+    <div class="footer">
+      <em> Coded by Kagiso Makgaba </em>
+    </div>
+  </body>
+</html>
